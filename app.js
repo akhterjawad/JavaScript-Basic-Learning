@@ -24,6 +24,12 @@ console.log( Age2 + Age1 )
 console.log( Age2 + " " + Age1 )
 console.log( Age3 + " " + Age4 )
 console.log( Age3 + + Age4 )
+var Age1 = prompt("enter first number");
+var Age2 = prompt("enter second number");
+var Age3 = +prompt("enter THIRD number");
+var Age4 = +prompt("enter fourth number");
+console.log(Age1 + Age2);
+console.log(Age3 + Age4);
 
 
 
