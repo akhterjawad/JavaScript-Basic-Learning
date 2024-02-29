@@ -155,4 +155,35 @@ console.log(comparision);
 //     console.log("code ghalat ha")
 // }
 
+// double plus ++ , double minus -- sirf 1 ka lia ha baki or numbers ka lia simple add or subract kranga
 
+// ++num pre increment
+// num++ post increment
+var num = 10;
+
+// console.log(num + 1);
+
+// console.log(++num);
+// console.log(num++);
+// console.log(++num);
+// console.log(num++);
+// console.log(++num);
+// console.log(num++);
+// console.log(++num);
+// console.log(num++);
+
+
+var calculate = ++num + num++ + ++num + --num + num-- + num++ + ++num;
+
+console.log(calculate,11+11+13+12+12+11+13);
+
+// var division = +prompt("write here even number")
+// console.log(division%2)
+
+var num = +prompt("number dal");
+if(num % 2 === 0){
+    console.log("even number dala ha aap na")
+}
+else{
+    console.log("odd number dala ha aap na")
+}
