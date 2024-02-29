@@ -45,15 +45,102 @@ console.log(10 >= "10");
 console.log(9 <= "10");
 // xclination mark (!) ka madlab ha not
 console.log(10 != 10);
+console.log(10 == "10");
 console.log(10 !== "10");
+console.log(10 !== 10);
 // double equal to data type bhi check krta ha (==) LockManager(!) ka sath
 // && = and
 // || = OR
-var comparision = 10 <= 10 || 10 < 6;
-console(comparision)
+var comparisions = 10 <= 10 || 10 < 6;
+console.log(comparisions)
 // (|| = OR)jitni bhi conditions ho unma sa agar 1 bhi true hui to wo nicha true batada ga answer ma
 // (& = and) is parallel of OR
+var comparision = 10 >= 10 && 10 > 6;
+console.log(comparision);
 
+
+// hum prom ma or console ma bracket () ka ander koi chez inverted commas "" ma jabhi likhta ha jub hum na wo chez first time likhi ho or baghir "" ka tub likhanga jub wo chez uper humna console ma ya var am likhi hui ho uper
+
+// var english = +prompt("english marks");
+// var math = +prompt ("math marks");
+// var obtain = +(english + math);
+// var totalmarks = 200;
+// console.log(obtain);
+// console.log(totalmarks);
+// console.log(obtain/totalmarks*100+"%")
+
+
+
+
+// var english = +prompt("english marks");
+// var math = +prompt("math marks");
+// var obtain= english + math;
+// var totalmarks= 200;
+// console.log(obtain);
+// console.log(totalmarks);
+// console.log(obtain/totalmarks*100 + "%");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// var persentage = +prompt("what is your persentage")
+// if (persentage > 50){
+//     console.log("malik tm nali khao ge ")
+// }
+// else(persentage){
+//     console.log(VIP)
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// if(num > 5 ){
+//     console.log("if") 
+// if (persentage)
+// }
+
+
+// else{
+//     console.log('else')
+// }
 
 
 
