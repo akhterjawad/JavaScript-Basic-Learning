@@ -86,60 +86,24 @@ console.log(comparision);
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// if ka ander jo condition hogi wo agar true hui to if run kraga warna elserun kraga
 
 // var persentage = +prompt("what is your persentage")
-// if (persentage > 50){
-//     console.log("malik tm nali khao ge ")
+// if (persentage >= 50){
+//     console.log("malik pass hogia")
 // }
-// else(persentage){
-//     console.log(VIP)
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// if(num > 5 ){
-//     console.log("if") 
-// if (persentage)
-// }
-
-
 // else{
-//     console.log('else')
+//     console.log("malik fail hogia")
+// }
+
+
+
+// var num = +prompt("number dal da")
+// if(num > 5 ){
+//     console.log("ifi") 
+// }
+// else{
+//     console.log('elses')
 // }
 
 
