@@ -86,6 +86,7 @@ console.log(comparision);
 
 
 
+
 // if ka ander jo condition hogi wo agar true hui to if run kraga warna elserun kraga
 
 // var persentage = +prompt("what is your persentage")
@@ -173,17 +174,175 @@ var num = 10;
 // console.log(num++);
 
 
-var calculate = ++num + num++ + ++num + --num + num-- + num++ + ++num;
+// var calculate = ++num + num++ + ++num + --num + num-- + num++ + ++num;
 
-console.log(calculate,11+11+13+12+12+11+13);
+// console.log(calculate,11+11+13+12+12+11+13);
 
-// var division = +prompt("write here even number")
-// console.log(division%2)
+// // var division = +prompt("write here even number")
+// // console.log(division%2)
 
-var num = +prompt("number dal");
-if(num % 2 === 0){
-    console.log("even number dala ha aap na")
+// var num = +prompt("number dal");
+// if(num % 2 === 0){
+//     console.log("even number dala ha aap na")
+// }
+// else{
+//     console.log("odd number dala ha aap na")
+// }
+
+
+
+// is function ka use hum islia krta ha Q ka hum console ka ander value bar bar na likha simple kahi bhi function ka nam likha or usa cole carwada ha
+
+// or jo {} hota ha inha scope katha ha
+
+// function greetUser (){   
+// console.log('hello world');
+// console.log('hello world');
+// console.log('hello world');
+// console.log('hello world');
+// }
+
+// greetUser()
+// greetUser()
+
+
+
+
+
+
+
+
+//undefined
+//null
+
+// var username ;
+// console.log(username)
+
+
+
+
+// agar is function ma mujha kuch bhi extra likhna hoga to ma console ma "" string laga ka likhanga asuguial
+
+// function ka name ka bad () ma jo likhta ha usa katha ha parameter function greetUser"(username , lastname , age)" 
+
+// function ko call krta hua jo hum value likhta ha usa katha ha argument "greetUser"('abdullah' , 'khan' , 20)""
+
+// or jo {} ka ander hota ha usa katha ha scope
+
+function greetUser(username , lastname , age){
+    console.log('hello ' + username + lastname + age);
 }
-else{
-    console.log("odd number dala ha aap na")
+
+greetUser('abdullah' , 'khan' , 20)
+
+
+
+function greetUser(username , lastname , age){
+    console.log('hello ' , username , lastname , age);
 }
+
+greetUser('abdullah' , 'khan' , 20)
+
+
+// line no 254 ka console ma usernames ki jaga undefined araha ha abdullah ka bajay Q ka yaha pa mujha function kuch return nahi kraha 
+
+// function jawadUsers(user){
+//     console.log('hello '+user);
+// }
+
+//  var usernames = jawadUsers('abdullah');
+//  console.log("username=>" , usernames);
+
+
+
+// return ka ander ap jo chez bhi likhta ho wo scope ka bahar wala console ma show hoti ha
+ 
+function jawadUsers(user){
+    console.log('hello '+user);
+    return 'jawad'+user
+}
+
+ var usernames = jawadUsers('abdullah');
+ console.log("username=>" , usernames);
+
+
+
+  
+function jawadUsers(user,user2){
+    console.log('hello '+user+user2);
+    return 'jawad'+user
+}
+
+ var usernames = jawadUsers('abdullah');
+ console.log("username=>" , usernames);
+
+
+
+
+   
+function jawadUsers(user,user2){
+    console.log('hello '+user+user2);
+    return 'jawad'+user
+}
+
+ var usernames = jawadUsers('abdullah', "jawad");
+ console.log("username=>" , usernames);
+
+
+
+
+ 
+// function sum(physics , maths) {
+//     console.log(physics , maths);
+// }
+// sum(50 , 48)
+
+
+// ya muja sir sa puchna ha ka jub ma uper wala function ko or nichay wala function ko Go live kartha ho to dono ki value same hojati ha 
+
+
+// function sum(physics , maths) {
+//     console.log(physics + maths);
+// }
+// sum(50 , 48)
+
+
+
+// jub hum koi variablae scop ka ander banata ha to wo kahlata ha local variablae or jub hum koi variablae scop ka bahar banata ha to wo kahlata ha global variablae 
+
+// global wala local ma empliment ho sakta ha lakin local wala global ma empliment nahi ho sakta
+
+var lastname = 'khan'
+
+function greatUser (){
+    var username = 'abdullah'
+    console.log(username + lastname);
+}
+
+// console.log(username)
+console.log(lastname)
+
+greatUser()
+
+
+
+
+var heading = document.querySelector(".head")
+console.log(heading.innerHTML);
+
+
+
+var headings = document.querySelector(".heads");
+headings.innerHTML = "jawad jawad";
+console.log(headings.innerHTML);
+
+
+
+
+
+
+
+
+
+
+
