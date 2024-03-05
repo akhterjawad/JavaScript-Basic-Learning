@@ -195,6 +195,16 @@ var num = 10;
 
 // or jo {} hota ha inha scope katha ha
 
+var greatUsers = document.querySelector(".heading");
+
+
+function greatusers() {
+    console.log(greatUsers.innerHTML);
+    greatUsers.innerHTML = "jawad jawad";
+}
+
+// console.log(greatUsers.innerHTML);
+
 // function greetUser (){   
 // console.log('hello world');
 // console.log('hello world');
@@ -229,19 +239,19 @@ var num = 10;
 
 // or jo {} ka ander hota ha usa katha ha scope
 
-function greetUser(username , lastname , age){
+function greetUser(username, lastname, age) {
     console.log('hello ' + username + lastname + age);
 }
 
-greetUser('abdullah' , 'khan' , 20)
+greetUser('abdullah', 'khan', 20)
 
 
 
-function greetUser(username , lastname , age){
-    console.log('hello ' , username , lastname , age);
+function greetUser(username, lastname, age) {
+    console.log('hello ', username, lastname, age);
 }
 
-greetUser('abdullah' , 'khan' , 20)
+greetUser('abdullah', 'khan', 20)
 
 
 // line no 254 ka console ma usernames ki jaga undefined araha ha abdullah ka bajay Q ka yaha pa mujha function kuch return nahi kraha 
@@ -256,42 +266,42 @@ greetUser('abdullah' , 'khan' , 20)
 
 
 // return ka ander ap jo chez bhi likhta ho wo scope ka bahar wala console ma show hoti ha
- 
-function jawadUsers(user){
-    console.log('hello '+user);
-    return 'jawad'+user
+
+function jawadUsers(user) {
+    console.log('hello ' + user);
+    return 'jawad' + user
 }
 
- var usernames = jawadUsers('abdullah');
- console.log("username=>" , usernames);
+var usernames = jawadUsers('abdullah');
+console.log("username=>", usernames);
 
 
 
-  
-function jawadUsers(user,user2){
-    console.log('hello '+user+user2);
-    return 'jawad'+user
+
+function jawadUsers(user, user2) {
+    console.log('hello ' + user + user2);
+    return 'jawad' + user
 }
 
- var usernames = jawadUsers('abdullah');
- console.log("username=>" , usernames);
+var usernames = jawadUsers('abdullah');
+console.log("username=>", usernames);
 
 
 
 
-   
-function jawadUsers(user,user2){
-    console.log('hello '+user+user2);
-    return 'jawad'+user
+
+function jawadUsers(user, user2) {
+    console.log('hello ' + user + user2);
+    return 'jawad' + user
 }
 
- var usernames = jawadUsers('abdullah', "jawad");
- console.log("username=>" , usernames);
+var usernames = jawadUsers('abdullah', "jawad");
+console.log("username=>", usernames);
 
 
 
 
- 
+
 // function sum(physics , maths) {
 //     console.log(physics , maths);
 // }
@@ -314,7 +324,7 @@ function jawadUsers(user,user2){
 
 var lastname = 'khan'
 
-function greatUser (){
+function greatUser() {
     var username = 'abdullah'
     console.log(username + lastname);
 }
@@ -333,11 +343,31 @@ console.log(heading.innerHTML);
 
 
 var headings = document.querySelector(".heads");
-headings.innerHTML = "jawad jawad";
+
+function vipuser() {
+    console.log(headings.innerHTML);
+    headings.innerHTML = "jawad jawad";
+}
+
 console.log(headings.innerHTML);
 
 
 
+
+// if ka ander paihly line ma jo word = ka bad likha hota ha wo or else ka ander jo word = ka bad likha hota ha wo dono html ma same hona chahiya
+
+// or khas tor pa if & else wala same hona chahiya
+
+var heading = document.querySelector('.head')
+function myIntro() {
+    console.log(heading.innerHTML);
+    // heading.innerHTML='jj'
+    if (heading.innerHTML === 'jawad') {
+        heading.innerHTML = "haseeb"
+    } else {
+        heading.innerHTML = 'jawad'
+    }
+}
 
 
 
