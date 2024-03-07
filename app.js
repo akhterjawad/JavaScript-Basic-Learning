@@ -215,9 +215,19 @@ function greatusers() {
 // greetUser()
 // greetUser()
 
+// is tarika sa HTMl ka kam javascript ka zariya change hota ha jo mana line no 220,221,222 ma kia ha
+
+var jawad = document.querySelector("#jawad")
+jawad.innerHTML= "java"
+console.log(jawad.innerHTML);
 
 
 
+
+var heads = document.querySelector("#jawadjj")
+
+    heads.innerHTML = "hasnain"
+    console.log(heads.innerHTML)
 
 
 
@@ -267,16 +277,20 @@ greetUser('abdullah', 'khan', 20)
 
 // return ka ander ap jo chez bhi likhta ho wo scope ka bahar wala console ma show hoti ha
 
+
+// variable function ka just uper bhi bansakhta ha 
+
+var usernames = jawadUsers('abdullah');
 function jawadUsers(user) {
     console.log('hello ' + user);
     return 'jawad' + user
 }
 
-var usernames = jawadUsers('abdullah');
 console.log("username=>", usernames);
 
 
 
+// or variable function ka just nicha  bhi bansakhta ha 
 
 function jawadUsers(user, user2) {
     console.log('hello ' + user + user2);
@@ -369,6 +383,41 @@ function myIntro() {
     }
 }
 
+
+
+
+
+function calculateGrade() {
+    var subject1 = parseInt(document.getElementById('subject1').value);
+    var subject2 = parseInt(document.getElementById('subject2').value);
+    var subject3 = parseInt(document.getElementById('subject3').value);
+    var subject4 = parseInt(document.getElementById('subject4').value);
+
+    var ObtainMarks = subject1 + subject2 + subject3 + subject4;
+    var percentage = (ObtainMarks / 400) * 100;
+    var grade = '';
+
+    if (percentage >= 101) {
+        grade = 'donky number to sahi dal';
+    } else if (percentage >= 80) {
+        grade = 'A1';
+    } else if (percentage >= 70) {
+        grade = 'A';
+    } else if (percentage >= 60) {
+        grade = 'B';
+    }  else if (percentage >= 50) {
+        grade = 'C';
+    } else if (percentage >= 40) {
+        grade = 'D';
+    } else {
+        grade = 'F';
+    }
+
+    var resultElement = document.getElementById('result');
+    resultElement.innerHTML ='total marks: '+400+"<br>"+ 'Obtained Marks: ' + ObtainMarks + '<br>' +
+        'Percentage: ' + percentage.toFixed(2) + '%<br>' +
+        'Grade: ' + grade;
+}
 
 
 
