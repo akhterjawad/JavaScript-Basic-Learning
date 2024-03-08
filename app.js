@@ -425,3 +425,127 @@ function calculateGrade() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// console.log('hello arrays');
+
+// let
+// const
+
+
+// var username = 'abdullah'; // declare
+// var username = 'usman';// redeclared
+// username = 'ammar'; // reassign
+
+// console.log(username)
+
+
+
+// var
+// redeclare
+// reassign
+
+
+
+
+// array.splice(1)
+
+
+// console.log(array);
+
+
+// array ki jo counting 0 sa shoru hoti ha or ya simple array ha
+
+let citiesss = ['karachi' , 'lahore' , 'islamabad' , 'faislabad' , 'hyderabad' , 'sheikarpur'];
+
+
+
+console.log(citiesss[3][2]);//is tarika sa hum array ka 3 word ka 2 letter pata karsakta ha
+console.log(citiesss.length);//is tarika sa hum ray ka words ki counting maloom karsakta ha
+console.log(citiesss[3]);// isma humna just third word maloom kia ha
+console.log(typeof(citiesss));// isma humna just array ki type maloom ki ha
+
+
+// ya nasted array ha
+let cities = ['karachi' , 'lahore' , 'islamabad' , 'faislabad' , 'hyderabad' , 'sheikarpur' , 20 , true , ['fb area' , 'liyari' , 'golimar']];
+console.log(cities[8][2]);// is tarika sa hum nested array ka 
+console.log(cities.length);
+console.log(cities[3]);
+console.log(typeof(cities))
+
+
+
+let user = ['akhter','jawad','ahmed-shapater','haseeb',['islamabad','karachi']]
+console.log(`${user[0]} ${user[2]}`);// is tarika sa hum 1 single console ma do array ka words dal sakta ha
+
+console.log(user[3][0]);
+console.log(user[4][1]);
+console.log(user.length);
+console.log(user[3]);
+console.log(typeof(user));
+
+
+user[0] = 'ammar';
+user[4] = 'ali'
+console.log(user[3])
+
+
+const clintses = [];
+clintses[0] = prompt('enter name1')
+clintses[1] = prompt('enter name2')
+clintses[2] = prompt('enter name3')
+console.log(clintses);
+document.write(clintses);
+
+
+
+
+let fruits = ['kala', 'Jawad', 'gora', 'ahmed', 'akhroot']
+// console.log(fruits);
+
+fruits.splice()
+// console.log(fruits);
+
+
+
+
+// let array = ['akhter','jawad','ahmed-shapater','haseeb'] 
+
+
+
+// array.push(`ahmed`)//ya end ma word ko add kardata ha
+// array.pop()//ya end ma word ko mitadata ha
+// array.unshift(`jj`)//ya start ma word ko add kardata ha
+// array.shift()//ya start ma word ko mitadata  ha
+
+
+
+// const fruitss = ['banana' , 'orange', 'mango'];
+// fruits.push('watermelon');
+// fruits.pop();
+// fruits.unshift('watermelon')
+// fruits.shift()
+// console.log(fruitss);
+
+
+
+
+
+
+
+
