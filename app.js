@@ -505,33 +505,51 @@ user[4] = 'ali'
 console.log(user[3])
 
 
-const clintses = [];
-clintses[0] = prompt('enter name1')
-clintses[1] = prompt('enter name2')
-clintses[2] = prompt('enter name3')
-console.log(clintses);
-document.write(clintses);
+// const clintses = [];
+// clintses[0] = prompt('enter name1')
+// clintses[1] = prompt('enter name2')
+// // clintses[2] = prompt('enter name3')
+// console.log(clintses);
+// document.write(clintses);
 
 
 
 
-let fruits = ['kala', 'Jawad', 'gora', 'ahmed', 'akhroot']
-// console.log(fruits);
 
-fruits.splice()
-// console.log(fruits);
+//push
+//pop
+//unshift
+//shift
+//splice
+//slice
+//split
+//join
+//concat
+//sort
+//reverse
+//indexof
 
 
 
 
-// let array = ['akhter','jawad','ahmed-shapater','haseeb'] 
+
+let vegetable = 'bottle guard'
+
+let fruit =`apple`;
+
+let fruits = ['kala', 'Jawad', 'gora', 'ahmed', 'akhroot',fruit,vegetable]
+
+console.log(fruits);
 
 
 
-// array.push(`ahmed`)//ya end ma word ko add kardata ha
-// array.pop()//ya end ma word ko mitadata ha
-// array.unshift(`jj`)//ya start ma word ko add kardata ha
-// array.shift()//ya start ma word ko mitadata  ha
+
+let array = ['akhter','jawad','ahmed-shapater','haseeb'] 
+
+array.push(`ahmed`)//ya end ma word ko add kardata ha
+array.pop()//ya end ma word ko mitadata ha
+array.unshift(`jj`)//ya start ma word ko add kardata ha
+array.shift()//ya start ma word ko mitadata  ha
 
 
 
@@ -544,8 +562,54 @@ fruits.splice()
 
 
 
+let dryFruits = ['kala', 'Jawad', 'gora', 'ahmed', 'akhroot',fruit,vegetable , 'watermelon' , 'melon' , 'mangoes' , 'guava' , 'nashpati' , 'grapes' , 'anaaar' , 'kinno']
+
+console.log(dryFruits);
+
+// fruits.splice('shurw kaha sa krna ha' , 'kitna delete krna hain' , 'uski jaga kiya rkhna haa') third wala optioonal ha
+
+// dryFruits.splice(2 , 1 ,'stawberry')
+// console.log(dryFruits);
+
+// dryFruits.splice(1 , 3);
+// console.log(dryFruits);
+
+
+// dryFruits.splice(6 , 2 , 'banana');
+// dryFruits[3].pop()
+// console.log(dryFruits)
+
+console.log(dryFruits);
+
+
+
+const newArray = dryFruits.slice(3)//
+console.log(newArray);
 
 
 
 
+
+
+
+
+
+// const names = 'Muhammad Abdullah khan';
+// const arr = names.split(' ')
+// console.log(array);
+
+
+
+
+
+
+
+
+
+
+
+
+// const names = ['Muhammad' , 'Abdullah' , 'Khan'];
+// const star = names.join(' ')
+// console.log(star);
 
