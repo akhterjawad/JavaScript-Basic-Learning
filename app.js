@@ -219,7 +219,7 @@ function greatusers() {
 // is tarika sa HTMl ka kam javascript ka zariya change hota ha jo mana line no 220,221,222 ma kia ha
 
 var jawad = document.querySelector("#jawad")
-jawad.innerHTML= "java"
+jawad.innerHTML = "java"
 console.log(jawad.innerHTML);
 
 
@@ -227,8 +227,8 @@ console.log(jawad.innerHTML);
 
 var heads = document.querySelector("#jawadjj")
 
-    heads.innerHTML = "hasnain"
-    console.log(heads.innerHTML)
+heads.innerHTML = "hasnain"
+console.log(heads.innerHTML)
 
 
 
@@ -406,7 +406,7 @@ function calculateGrade() {
         grade = 'A';
     } else if (percentage >= 60) {
         grade = 'B';
-    }  else if (percentage >= 50) {
+    } else if (percentage >= 50) {
         grade = 'C';
     } else if (percentage >= 40) {
         grade = 'D';
@@ -415,7 +415,7 @@ function calculateGrade() {
     }
 
     var resultElement = document.getElementById('result');
-    resultElement.innerHTML ='total marks: '+400+"<br>"+ 'Obtained Marks: ' + ObtainMarks + '<br>' +
+    resultElement.innerHTML = 'total marks: ' + 400 + "<br>" + 'Obtained Marks: ' + ObtainMarks + '<br>' +
         'Percentage: ' + percentage.toFixed(2) + '%<br>' +
         'Grade: ' + grade;
 }
@@ -505,33 +505,33 @@ function calculateGrade() {
 
 // array ki jo counting 0 sa shoru hoti ha or ya simple array ha
 
-let citiesss = ['karachi' , 'lahore' , 'islamabad' , 'faislabad' , 'hyderabad' , 'sheikarpur'];
+let citiesss = ['karachi', 'lahore', 'islamabad', 'faislabad', 'hyderabad', 'sheikarpur'];
 
 
 
 console.log(citiesss[3][2]);//is tarika sa hum array ka 3 word ka 2 letter pata karsakta ha
 console.log(citiesss.length);//is tarika sa hum ray ka words ki counting maloom karsakta ha
 console.log(citiesss[3]);// isma humna just third word maloom kia ha
-console.log(typeof(citiesss));// isma humna just array ki type maloom ki ha
+console.log(typeof (citiesss));// isma humna just array ki type maloom ki ha
 
 
 // ya nasted array ha
-let cities = ['karachi' , 'lahore' , 'islamabad' , 'faislabad' , 'hyderabad' , 'sheikarpur' , 20 , true , ['fb area' , 'liyari' , 'golimar']];
+let cities = ['karachi', 'lahore', 'islamabad', 'faislabad', 'hyderabad', 'sheikarpur', 20, true, ['fb area', 'liyari', 'golimar']];
 console.log(cities[8][2]);// is tarika sa hum nested array ka 
 console.log(cities.length);
 console.log(cities[3]);
-console.log(typeof(cities))
+console.log(typeof (cities))
 
 
 
-let user = ['akhter','jawad','ahmed-shapater','haseeb',['islamabad','karachi']]
+let user = ['akhter', 'jawad', 'ahmed-shapater', 'haseeb', ['islamabad', 'karachi']]
 console.log(`${user[0]} ${user[2]}`);// is tarika sa hum 1 single console ma do array ka words dal sakta ha
 
 console.log(user[3][0]);
 console.log(user[4][1]);
 console.log(user.length);
 console.log(user[3]);
-console.log(typeof(user));
+console.log(typeof (user));
 
 
 user[0] = 'ammar';
@@ -578,16 +578,16 @@ console.log(user[3])
 
 let vegetable = 'bottle guard'
 
-let fruit =`apple`;
+let fruit = `apple`;
 
-let fruits = ['kala', 'Jawad', 'gora', 'ahmed', 'akhroot',fruit,vegetable]
+let fruits = ['kala', 'Jawad', 'gora', 'ahmed', 'akhroot', fruit, vegetable]
 
 console.log(fruits);
 
 
 
 
-let array = ['akhter','jawad','ahmed-shapater','haseeb'] 
+let array = ['akhter', 'jawad', 'ahmed-shapater', 'haseeb']
 
 array.push(`ahmed`)//ya end ma word ko add kardata ha
 array.pop()//ya end ma word ko mitadata ha
@@ -605,14 +605,14 @@ array.shift()//ya start ma word ko mitadata  ha
 
 
 
-let dryFruits = ['kala', 'Jawad', 'gora', 'ahmed', 'akhroot',fruit,vegetable , 'watermelon' , 'melon' , 'mangoes' , 'guava' , 'nashpati' , 'grapes' , 'anaaar' , 'kinno']
+let dryFruits = ['kala', 'Jawad', 'gora', 'ahmed', 'akhroot', fruit, vegetable, 'watermelon', 'melon', 'mangoes', 'guava', 'nashpati', 'grapes', 'anaaar', 'kinno']
 
 // console.log(dryFruits);
 
 // fruits.splice('shurw kaha sa krna ha' , 'kitna delete krna hain' , 'uski jaga kiya rkhna haa') third wala optioonal ha
 
 
-dryFruits.splice(2 , 1 ,'stawberry')
+dryFruits.splice(2, 1, 'stawberry')
 console.log(dryFruits);
 
 // dryFruits.splice(1 , 3);
@@ -656,4 +656,69 @@ console.log(newArray);
 // const names = ['Muhammad' , 'Abdullah' , 'Khan'];
 // const star = names.join(' ')
 // console.log(star);
+
+
+const Fruits = ['banana', 'orange', 'mango'];
+let input = document.querySelector('#shop')
+let remarks = document.querySelector('.head')
+
+function pushme() {
+    if (Fruits.includes(input.value)) {
+        console.log('Item Available');
+        remarks.innerHTML = `${input.value} are available`;
+    } else {
+        console.log(`item not available`);
+        remarks.innerHTML = `${input.value} are not available`
+    }
+
+}
+
+
+// console.log('hello loops')
+
+// there are three types of loops
+
+//forLoop
+//while loop
+//do while loop
+
+
+
+// for (let i = 0; i <= 10; i++) {
+//     console.log('hello world', i);
+// }
+
+// for (let i = 0; i <= 10; i++) {
+//     console.log(`${i * 1} ka table`);
+//     for (let j = 0; j <= 10; j++) {
+//         console.log(`${i} X ${j} = ${i*j}`);
+//     }
+// }
+
+
+
+
+// const userInput = +prompt('enter table number')
+// const times = +prompt('How many time do you want?')
+
+// for (let i = 1; i <= times; i++) {
+//     console.log(`${userInput} X ${i} = ${userInput*i}`);
+// }
+
+
+
+
+//infinite loop
+// for (let i = 1; i > 0; i++) {
+//     console.log(i);
+// }
+
+
+
+// for (let i = 1; i <= 10; i++) {
+//     console.log('outer Loop ===> ' , i);
+//     for(let j = 1; j <= 5; j++){
+//         console.log('inner Loop===>' , j);
+//     }
+// }
 
