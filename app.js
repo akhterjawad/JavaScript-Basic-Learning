@@ -47,6 +47,7 @@ console.log(9 <= "10");
 console.log(10 != 10);
 console.log(10 == "10");
 console.log(10 !== "10");
+console.log(10 != "10");
 console.log(10 !== 10);
 // double equal to data type bhi check krta ha (==) LockManager(!) ka sath
 // && = and
@@ -497,7 +498,6 @@ function calculateGrade() {
 
 
 
-// array.splice(1)
 
 
 // console.log(array);
@@ -562,8 +562,17 @@ console.log(user[3])
 //sort
 //reverse
 //indexof
+//includes
 
-
+//push {last ma value add krna ka liya}
+//pop {last ma value hata na ka liya}
+//unshift {start ma value add krna ka liya}
+//shift {start ma value hata na ka liya}
+//splice{('shurw kaha sa krna ha' , 'kitna delete krna hain' , 'uski jaga kiya rkhna haa') third wala optioonal ha}
+//split {paragraph ko array ma krana ka liya }
+//join {Array ko paragraph ma krna ka liya yani join krna ka lia}
+//includes{just bollien ma ya batana ka lia ka wo value array ma ha ya nahi}
+//indexof{bs index number batana ka lia ka konsa word ka kia number ha}
 
 
 
@@ -598,12 +607,13 @@ array.shift()//ya start ma word ko mitadata  ha
 
 let dryFruits = ['kala', 'Jawad', 'gora', 'ahmed', 'akhroot',fruit,vegetable , 'watermelon' , 'melon' , 'mangoes' , 'guava' , 'nashpati' , 'grapes' , 'anaaar' , 'kinno']
 
-console.log(dryFruits);
+// console.log(dryFruits);
 
 // fruits.splice('shurw kaha sa krna ha' , 'kitna delete krna hain' , 'uski jaga kiya rkhna haa') third wala optioonal ha
 
-// dryFruits.splice(2 , 1 ,'stawberry')
-// console.log(dryFruits);
+
+dryFruits.splice(2 , 1 ,'stawberry')
+console.log(dryFruits);
 
 // dryFruits.splice(1 , 3);
 // console.log(dryFruits);
