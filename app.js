@@ -727,3 +727,20 @@ function pushme() {
 
 
 
+
+
+
+// let frut = ['apple' , 'banana' , 'orange' , 'watermelon' , 'grapes'];
+
+// console.log(frut);
+// const ul = document.querySelector('ul');
+// for (let i = 0; i < frut.length; i++) {
+//     // console.log(frut[i]);
+//     ul.innerHTML += `<li>${frut[i]}</li>`
+// }
+
+
+
+
+
+
