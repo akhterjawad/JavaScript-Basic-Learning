@@ -688,6 +688,24 @@ function pushme() {
 //     console.log('hello world', i);
 // }
 
+
+
+//infinite loop
+// for (let i = 1; i > 0; i++) {
+//     console.log(i);
+// }
+
+
+
+// for (let i = 1; i <= 5; i++) {
+//     console.log('outer Loop ===> ' , i);
+//     for(let j = 1; j <= 5; j++){
+//         console.log('inner Loop===>' , j);
+//     }
+// }
+
+
+
 // for (let i = 0; i <= 10; i++) {
 //     console.log(`${i * 1} ka table`);
 //     for (let j = 0; j <= 10; j++) {
@@ -708,17 +726,4 @@ function pushme() {
 
 
 
-//infinite loop
-// for (let i = 1; i > 0; i++) {
-//     console.log(i);
-// }
-
-
-
-// for (let i = 1; i <= 10; i++) {
-//     console.log('outer Loop ===> ' , i);
-//     for(let j = 1; j <= 5; j++){
-//         console.log('inner Loop===>' , j);
-//     }
-// }
 
