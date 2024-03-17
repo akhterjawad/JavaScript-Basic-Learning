@@ -569,11 +569,13 @@ console.log(user[3])
 //unshift {start ma value add krna ka liya}
 //shift {start ma value hata na ka liya}
 //splice{('shurw kaha sa krna ha' , 'kitna delete krna hain' , 'uski jaga kiya rkhna haa') third wala optioonal ha}
-//split {paragraph ko array ma krana ka liya }
+//split {paragraph ko array ma krana ka liya,or paragraph ma convert corna ka lia bhi }
 //join {Array ko paragraph ma krna ka liya yani join krna ka lia}
 //includes{just bollien ma ya batana ka lia ka wo value array ma ha ya nahi}
 //indexof{bs index number batana ka lia ka konsa word ka kia number ha}
-
+//slice{start sa uradata ha bracket ma jitna digits dalo}
+//reverse{array ko ulta krdata ha}
+//sort{sequence ma lana ka lia ha}
 
 
 let vegetable = 'bottle guard'
@@ -605,15 +607,15 @@ array.shift()//ya start ma word ko mitadata  ha
 
 
 
-let dryFruits = ['kala', 'Jawad', 'gora', 'ahmed', 'akhroot', fruit, vegetable, 'watermelon', 'melon', 'mangoes', 'guava', 'nashpati', 'grapes', 'anaaar', 'kinno']
+let dryFruits = ['kala', 'ahmed', 'gora', 'jawad', 'akhroot', fruit, vegetable, 'watermelon', 'melon', 'mangoes', 'guava', 'nashpati', 'grapes', 'anaaar', 'kinno']
 
 // console.log(dryFruits);
 
 // fruits.splice('shurw kaha sa krna ha' , 'kitna delete krna hain' , 'uski jaga kiya rkhna haa') third wala optioonal ha
 
 
-dryFruits.splice(2, 1, 'stawberry')
-console.log(dryFruits);
+// dryFruits.splice(2, 1, 'stawberry')
+// console.log(dryFruits);
 
 // dryFruits.splice(1 , 3);
 // console.log(dryFruits);
@@ -623,11 +625,11 @@ console.log(dryFruits);
 // dryFruits[3].pop()
 // console.log(dryFruits)
 
-console.log(dryFruits);
+// console.log(dryFruits);
 
 
 
-const newArray = dryFruits.slice(3)//
+const newArray = dryFruits.slice(3)//start sa uradata ha bracket ma jitna digits dalo
 console.log(newArray);
 
 
@@ -638,9 +640,10 @@ console.log(newArray);
 
 
 
-// const names = 'Muhammad Abdullah khan';
-// const arr = names.split(' ')
-// console.log(array);
+// const namess = 'Muhammad Abdullah khan';
+// //const arr = namess.split(' ')
+// const arr = namess.split('')
+// console.log(arr);
 
 
 
@@ -653,10 +656,29 @@ console.log(newArray);
 
 
 
-// const names = ['Muhammad' , 'Abdullah' , 'Khan'];
+const names = ['Muhammad' , 'Abdullah' , 'Khan'];
 // const star = names.join(' ')
-// console.log(star);
+const star = names.join(' j   ')
+console.log(star);
 
+
+
+
+
+let fruitss = [`strawberry` , 'apple', 'orange', 'banana'];
+fruitss.sort((a,b)=>{
+  // return (b>a)-(b<a)
+  return (a>b)-(a<b)
+})
+console.log(fruitss);
+
+
+let aray = [6,3,5,1,2]
+aray.sort((a,b)=>{
+    ////return b-a
+    return a-b
+})
+console.log(aray);
 
 const Fruits = ['banana', 'orange', 'mango'];
 let input = document.querySelector('#shop')
