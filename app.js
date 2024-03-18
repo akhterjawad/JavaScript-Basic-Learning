@@ -656,7 +656,7 @@ console.log(newArray);
 
 
 
-const names = ['Muhammad' , 'Abdullah' , 'Khan'];
+const names = ['Muhammad', 'Abdullah', 'Khan'];
 // const star = names.join(' ')
 const star = names.join(' j   ')
 console.log(star);
@@ -665,20 +665,26 @@ console.log(star);
 
 
 
-let fruitss = [`strawberry` , 'apple', 'orange', 'banana'];
-fruitss.sort((a,b)=>{
-  // return (b>a)-(b<a)
-  return (a>b)-(a<b)
+let fruitss = [`strawberry`, 'apple', 'orange', 'banana'];
+fruitss.sort((a, b) => {
+    // return (b>a)-(b<a)
+    return (a > b) - (a < b)
 })
 console.log(fruitss);
 
 
-let aray = [6,3,5,1,2]
-aray.sort((a,b)=>{
+let aray = [6, 3, 5, 1, 2]
+aray.sort((a, b) => {
     ////return b-a
-    return a-b
+    return a - b
 })
 console.log(aray);
+
+// let jawaad = [7,4,2,3,6]
+// jawaad.slice();
+// console.log(jawaad);
+// console.log(jawad.slice(1,3));
+
 
 const Fruits = ['banana', 'orange', 'mango'];
 let input = document.querySelector('#shop')
@@ -764,5 +770,63 @@ function pushme() {
 
 
 
+
+
+// let fruts = ['apple' , 'banana' , 'orange' , 'watermelon' , 'grapes'];
+// let ul = document.querySelector('#ul')
+// function ol() {
+//   for (let i = 0; i < fruts.length; i++) {
+//     console.log(fruts[i],i); 
+//     ul.innerHTML += `<li>${fruts[i]}</li>`
+//    } 
+// }
+
+
+
+// let fruts = ['apple' , 'banana' , 'orange' , 'watermelon' , 'grapes'];
+// let ul = document.querySelector('#ul')
+// function ol() {
+//     ul.innerHTML = ''
+//   for (let i = 0; i < fruts.length; i++) {
+//     console.log(fruts[i],i); 
+//     ul.innerHTML += `<li>${fruts[i]}</li>`
+//    } 
+// }
+
+
+
+
+
+// let fruts = ['apple', 'banana', 'orange', 'watermelon', 'grapes'];
+// let ul = document.querySelector('#ul')
+// function ol() {
+//     ul.innerHTML = ''
+//     let i = 0;
+//     while (i < fruts.length) {
+
+//         console.log(fruts[i], i);
+//         ul.innerHTML += `<li>${fruts[i]}</li>`
+//         i++
+//     }
+// }
+
+
+
+
+
+
+let fruts = ['apple', 'banana', 'orange', 'watermelon', 'grapes'];
+let ul = document.querySelector('#ul')
+function ol() {
+    ul.innerHTML = ''
+    let i = 0;
+    do {console.log(fruts[i], i);
+        ul.innerHTML += `<li>${fruts[i]}</li>`
+        i++}
+    while(i < fruts.length) 
+     
+
+        
+    }
 
 
