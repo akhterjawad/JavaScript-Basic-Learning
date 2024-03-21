@@ -1,12 +1,12 @@
 // alert("hellow")
 // alert("jawad \ndream")
 
-// 4 tarha ki data types hoti ha
+// 4 tarha ki data types hoti ha filhal
 
 // 1 string "ejdsn4383029"
 // 2 number 6738
 // 3Boolean true ya false
-// 4 ko badma dakhanga
+// 4 object 
 var userName = ("jawad")
 var age = (19)
 var education = ("X!!")
@@ -23,7 +23,7 @@ var Age4 = "65";
 console.log(Age2 + Age1);
 console.log(Age2 + " " + Age1);
 console.log(Age3 + " " + Age4);
-console.log(Age3 + + Age4);
+console.log(Age3 + Age4);
 // var Age1 = prompt("enter first number");
 // var Age2 = prompt("enter second number");
 // var Age3 = +prompt("enter THIRD number");
@@ -196,13 +196,7 @@ var num = 10;
 
 // or jo {} hota ha inha scope katha ha
 
-var greatUsers = document.querySelector(".heading");
 
-
-function greatusers() {
-    console.log(greatUsers.innerHTML);
-    greatUsers.innerHTML = "jawad jawad";
-}
 
 // console.log(greatUsers.innerHTML);
 
@@ -223,12 +217,17 @@ jawad.innerHTML = "java"
 console.log(jawad.innerHTML);
 
 
-
-
 var heads = document.querySelector("#jawadjj")
-
 heads.innerHTML = "hasnain"
 console.log(heads.innerHTML)
+
+
+
+var greatUsers = document.querySelector(".heading");
+function greatusers() {
+    console.log(greatUsers.innerHTML);
+    greatUsers.innerHTML = "jawad jawad";
+}
 
 
 
@@ -317,10 +316,10 @@ console.log("username=>", usernames);
 
 
 
-// function sum(physics , maths) {
-//     console.log(physics , maths);
-// }
-// sum(50 , 48)
+function sum(physics , maths) {
+    console.log(physics , maths);
+}
+sum(50 , 48)
 
 
 // ya muja sir sa puchna ha ka jub ma uper wala function ko or nichay wala function ko Go live kartha ho to dono ki value same hojati ha 
@@ -352,7 +351,7 @@ greatUser()
 
 
 
-var heading = document.querySelector(".head")
+var heading = document.querySelector(".headsss")
 console.log(heading.innerHTML);
 
 
@@ -373,14 +372,14 @@ console.log(headings.innerHTML);
 
 // or khas tor pa if & else wala same hona chahiya
 
-var heading = document.querySelector('.head')
+var heading = document.querySelector('.headssss')
 function myIntro() {
     console.log(heading.innerHTML);
     // heading.innerHTML='jj'
-    if (heading.innerHTML === 'jawad') {
+    if (heading.innerHTML === 'ahmed') {
         heading.innerHTML = "haseeb"
     } else {
-        heading.innerHTML = 'jawad'
+        heading.innerHTML = 'ahmed'
     }
 }
 
@@ -582,7 +581,7 @@ let vegetable = 'bottle guard'
 
 let fruit = `apple`;
 
-let fruits = ['kala', 'Jawad', 'gora', 'ahmed', 'akhroot', fruit, vegetable]
+let fruits = ['kala', 'ahmed', 'gora', 'jawad', 'akhroot', fruit, vegetable]
 
 console.log(fruits);
 
@@ -601,7 +600,7 @@ array.shift()//ya start ma word ko mitadata  ha
 // const fruitss = ['banana' , 'orange', 'mango'];
 // fruits.push('watermelon');
 // fruits.pop();
-// fruits.unshift('watermelon')
+// fruits.unshift('watermelonss')
 // fruits.shift()
 // console.log(fruitss);
 
@@ -697,6 +696,7 @@ function pushme() {
     } else {
         console.log(`item not available`);
         remarks.innerHTML = `${input.value} are not available`
+        document.write(remarks.innerHTML)
     }
 
 }
@@ -723,7 +723,7 @@ function pushme() {
 //     console.log(i);
 // }
 
-
+                                                                
 
 // for (let i = 1; i <= 5; i++) {
 //     console.log('outer Loop ===> ' , i);
@@ -772,14 +772,15 @@ function pushme() {
 
 
 
-// let fruts = ['apple' , 'banana' , 'orange' , 'watermelon' , 'grapes'];
-// let ul = document.querySelector('#ul')
-// function ol() {
-//   for (let i = 0; i < fruts.length; i++) {
-//     console.log(fruts[i],i); 
-//     ul.innerHTML += `<li>${fruts[i]}</li>`
-//    } 
-// }
+let frutss = ['apple' , 'banana' , 'orange'];
+let ull = document.querySelector('#ul')
+function ol() {
+    ull.innerHTML =``
+  for (let i = 0; i < frutss.length; i++) {
+    console.log(frutss[i],i); 
+    ull.innerHTML += `<li>${fruitss[i]}</li>`
+   } 
+}
 
 
 
@@ -815,18 +816,18 @@ function pushme() {
 
 
 
-let fruts = ['apple', 'banana', 'orange', 'watermelon', 'grapes'];
-let ul = document.querySelector('#ul')
-function ol() {
-    ul.innerHTML = ''
-    let i = 0;
-    do {console.log(fruts[i], i);
-        ul.innerHTML += `<li>${fruts[i]}</li>`
-        i++}
-    while(i < fruts.length) 
+// let fruts = ['apple', 'banana', 'orange', 'watermelon', 'grapes'];
+// let ul = document.querySelector('#ul')
+// function ol() {
+//     ul.innerHTML = ''
+//     let i = 0;
+//     do {console.log(fruts[i], i);
+//         ul.innerHTML += `<li>${fruts[i]}</li>`
+//         i++}
+//     while(i < fruts.length) 
      
 
         
-    }
+//     }
 
 
