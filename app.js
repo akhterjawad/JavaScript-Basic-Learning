@@ -1,4 +1,6 @@
 // alert("hellow")
+// let email = <a href="haseeburrehmanjs@gmail.com">haseeburrehmanjs@gmail.com</a>
+// alert('My Email Is ' + email)
 // alert("jawad \ndream")
 
 // 4 tarha ki data types hoti ha filhal
@@ -7,10 +9,10 @@
 // 2 number 6738
 // 3Boolean true ya false
 // 4 object 
-var userName = ("jawad")
+var userName = "jawad"
 var age = (19)
 var education = ("X!!")
-var address = ("Malir kalaboard")
+var address = "Malir kalaboard"
 console.log(userName);
 console.log(age);
 console.log(education);
@@ -22,17 +24,19 @@ var Age3 = "64";
 var Age4 = "65";
 console.log(Age2 + Age1);
 console.log(Age2 + " " + Age1);
-console.log(Age3 + " " + Age4);
+console.log(Age3 + Age1 + Age2);
 console.log(Age3 + Age4);
 // var Age1 = prompt("enter first number");
 // var Age2 = prompt("enter second number");
-// var Age3 = +prompt("enter THIRD number");
+// var Age3 = +prompt("enter THIRD number");//agar prompt sa paily + laga hoto or agar hum number ki jaga boolion dalda to not a number ata ha
 // var Age4 = +prompt("enter fourth number");
 console.log(Age1 + Age2);
 console.log(Age3 + Age4);
+console.log(Age3);
+
 var num1 = 20;
 // num1=num1+10
-// line number 34 ka 1 short form bhi ha wo nicha likhi ha
+// line number 38 ka 1 short form bhi ha wo nicha likhi ha
 num1 += 10
 // num1-=10
 // num1*=10
@@ -41,13 +45,18 @@ console.log(num1 + 15);
 console.log(10 < 5);
 console.log(10 >= 10);
 console.log(10 <= 10);
-console.log(10 >= "10");
+console.log(10 <= "10");
 console.log(9 <= "10");
 // xclination mark (!) ka madlab ha not
 console.log(10 != 10);
 console.log(10 == "10");
-console.log(10 !== "10");
+console.log(10 === "10");
+console.log(10 !== "10");//kia number 10 barabar nahi ha string ka number 10 ka '10'
 console.log(10 != "10");
+console.log(2 == 2.0);
+console.log(2 != 2.0);
+console.log(0.3 === 0.1+0.2);
+console.log(0.3 !== 0.1+0.2);
 console.log(10 !== 10);
 // double equal to data type bhi check krta ha (==) LockManager(!) ka sath
 // && = and
@@ -62,13 +71,16 @@ console.log(comparision);
 
 // hum prom ma or console ma bracket () ka ander koi chez inverted commas "" ma jabhi likhta ha jub hum na wo chez first time likhi ho or baghir "" ka tub likhanga jub wo chez uper humna console ma ya var am likhi hui ho uper
 
+var english = 60;
+var math = 41;
+
 // var english = +prompt("english marks");
 // var math = +prompt ("math marks");
-// var obtain = +(english + math);
-// var totalmarks = 200;
-// console.log(obtain);
-// console.log(totalmarks);
-// console.log(obtain/totalmarks*100+"%")
+var obtain = english + math;
+var totalmarks = 200;
+console.log(obtain);
+console.log(totalmarks);
+console.log(obtain/totalmarks*100+"%")
 
 
 
@@ -88,7 +100,7 @@ console.log(comparision);
 
 
 
-// if ka ander jo condition hogi wo agar true hui to if run kraga warna elserun kraga
+// if ka ander jo condition hogi wo agar true hui to if run kraga warna else run kraga
 
 // var persentage = +prompt("what is your persentage")
 // if (persentage >= 50){
@@ -109,17 +121,17 @@ console.log(comparision);
 // }
 
 
-
+var height = 40
 // var height = +prompt("Put the height")
-// if(height < 20){
-//     console.log("not accept")
-// }
-// else if( height > 30 ){
-//   console.log("Accepted")
-// }
-// else{
-//     console.log("just accepted")
-// }
+if(!(height < 20)){
+    console.log("not accept")
+}
+else if( height > 30 ){
+  console.log("Accepted")
+}
+else{
+    console.log("just accepted")
+}
 
 
 
@@ -165,19 +177,20 @@ var num = 10;
 
 // console.log(num + 1);
 
-// console.log(++num);
-// console.log(num++);
-// console.log(++num);
-// console.log(num++);
-// console.log(++num);
-// console.log(num++);
-// console.log(++num);
-// console.log(num++);
+console.log(++num);
+console.log(++num);
+console.log(num++);
+console.log(++num);
+console.log(num++);
+console.log(++num);
+console.log(num++);
+console.log(++num);
+console.log(num++);
 
 
-// var calculate = ++num + num++ + ++num + --num + num-- + num++ + ++num;
+var calculate = ++num + num++ + ++num + --num + num-- + num++ + ++num;
 
-// console.log(calculate,11+11+13+12+12+11+13);
+console.log(calculate,11+11+13+12+12+11+13);
 
 // // var division = +prompt("write here even number")
 // // console.log(division%2)
@@ -276,25 +289,33 @@ greetUser('abdullah', 'khan', 20)
 
 
 // return ka ander ap jo chez bhi likhta ho wo scope ka bahar wala console ma show hoti ha
+function jawadUsers(user1) {
+    console.log('hello ' + user1);
+    // return 'hellow' + user1
+}
+
+var userss = jawadUsers('abdullah');
+console.log("username=>", userss);
 
 
 // variable function ka just uper bhi bansakhta ha 
 
-var usernames = jawadUsers('abdullah');
-function jawadUsers(user) {
-    console.log('hello ' + user);
-    return 'jawad' + user
+var uservalue = jawadUsers('abdullah');
+function jawadUsers(user2) {
+    console.log('hello ' + user2);
+    return 'jawad' + user2
 }
 
-console.log("username=>", usernames);
+console.log("username=>", uservalue);
 
 
 
 // or variable function ka just nicha  bhi bansakhta ha 
 
-function jawadUsers(user, user2) {
-    console.log('hello ' + user + user2);
-    return 'jawad' + user
+function jawadUsers(user3, user4) {
+    console.log('hello ' + user3 + user4);
+    // return 'jawad' + user3
+    // return 'jawad' + user3 + user4  
 }
 
 var usernames = jawadUsers('abdullah');
@@ -304,12 +325,12 @@ console.log("username=>", usernames);
 
 
 
-function jawadUsers(user, user2) {
-    console.log('hello ' + user + user2);
-    return 'jawad' + user
+function jawadUsers(user5, user6) {
+    console.log('hello ' + user5 + user6);
+    // return 'jawad' + user
 }
 
-var usernames = jawadUsers('abdullah', "jawad");
+var usernames = jawadUsers('abdullah', "jawwad");
 console.log("username=>", usernames);
 
 
@@ -357,7 +378,6 @@ console.log(heading.innerHTML);
 
 
 var headings = document.querySelector(".heads");
-
 function vipuser() {
     console.log(headings.innerHTML);
     headings.innerHTML = "jawad jawad";
@@ -422,6 +442,13 @@ function calculateGrade() {
 
 
 
+// let todo = document.querySelector('#jawad');
+// function clickon() {
+//     console.log(todo.value);
+// todo.value =""
+// }
+
+
 
 
 
@@ -443,7 +470,7 @@ function calculateGrade() {
 //     console.log(comMarks.value);
 
 //     var totalMarks = 400;
-//     var obtainedMarks = +chemMarks.value + +phyMarks.value + +mathMarks.value + +comMarks.value;
+//     var obtainedMarks = +chemMarks.value + +phyMarks.value + +mathMarks.value +          +comMarks.value;
 //     console.log('obtained marks ===>', obtainedMarks);
 //     studentTotal.innerHTML = obtainedMarks;
 
@@ -461,6 +488,34 @@ function calculateGrade() {
 //         grade.innerHTML = 'FAIL'
 //     }
 // }
+
+
+
+let chemistrymarks = document.querySelector('#chem-marks')
+let physicsmarks = document.querySelector('#phy-marks')
+let mathmarks = document.querySelector('#math-marks')
+let computermarks = document.querySelector('#com-marks')
+let studentTotal = document.querySelector('#total-marks')
+let percentage = document.querySelector('#percentage')
+let grade = document.querySelector('#grade')
+
+
+function calculatePercentage() {
+    let obtainedMarks=(+chemistrymarks.value + +physicsmarks.value + +mathmarks.value + +computermarks.value);
+    studentTotal.innerHTML=obtainedMarks
+    // let  studentTotal = 
+    let totalmarks= 400;
+    percentage.innerHTML= obtainedMarks / totalmarks*100
+    if (percentage.innerHTML >= 100) {
+        grade.innerHTML = `A<sup>1+</sup>`
+    } else if(percentage.innerHTML >= 80) {
+        grade.innerHTML = `A<sup>1</sup>`
+    
+    }else{
+        `fail`
+    }
+
+}
 
 
 
@@ -502,7 +557,7 @@ function calculateGrade() {
 // console.log(array);
 
 
-// array ki jo counting 0 sa shoru hoti ha or ya simple array ha
+// array ki jo counting yani indexno 0 sa || length 1 sa shoru hoti ha or ya simple array ha
 
 let citiesss = ['karachi', 'lahore', 'islamabad', 'faislabad', 'hyderabad', 'sheikarpur'];
 
@@ -524,8 +579,9 @@ console.log(typeof (cities))
 
 
 let user = ['akhter', 'jawad', 'ahmed-shapater', 'haseeb', ['islamabad', 'karachi']]
-console.log(`${user[0]} ${user[2]}`);// is tarika sa hum 1 single console ma do array ka words dal sakta ha
+console.log(`${user[0]} ${user[2]}`);// is tarika sa hum 1 single console ma 2 wards dal sakta ha array ka
 
+// console.log(user[0][2]);
 console.log(user[3][0]);
 console.log(user[4][1]);
 console.log(user.length);
@@ -536,6 +592,7 @@ console.log(typeof (user));
 user[0] = 'ammar';
 user[4] = 'ali'
 console.log(user[3])
+console.log(user[0])
 
 
 // const clintses = [];
@@ -606,9 +663,18 @@ array.shift()//ya start ma word ko mitadata  ha
 
 
 
-let dryFruits = ['kala', 'ahmed', 'gora', 'jawad', 'akhroot', fruit, vegetable, 'watermelon', 'melon', 'mangoes', 'guava', 'nashpati', 'grapes', 'anaaar', 'kinno']
+let dryFruits = ['kala',1, 'ahmed', 'gora', 'jawad', 'akhroot', fruit, vegetable, 'watermelon', 'melon', 'mangoes', 'guava', 'nashpati', 'grapes', 'anaaar', 'kinno']
 
 // console.log(dryFruits);
+// document.write(dryFruits.indexOf)
+
+
+let myfunc = item =>{
+    return item === `ahmed`
+}
+let value = dryFruits.findIndex(myfunc)
+console.log(value);
+
 
 // fruits.splice('shurw kaha sa krna ha' , 'kitna delete krna hain' , 'uski jaga kiya rkhna haa') third wala optioonal ha
 
@@ -664,7 +730,7 @@ console.log(star);
 
 
 
-let fruitss = [`strawberry`, 'apple', 'orange', 'banana'];
+let fruitss = ['apple', 'orange',`strawberry`, 'banana'];
 fruitss.sort((a, b) => {
     // return (b>a)-(b<a)
     return (a > b) - (a < b)
@@ -673,10 +739,12 @@ console.log(fruitss);
 
 
 let aray = [6, 3, 5, 1, 2]
-aray.sort((a, b) => {
-    ////return b-a
-    return a - b
-})
+// aray.sort((a, b) => {
+//     // return b-a
+//     return a - b
+// })
+
+
 console.log(aray);
 
 // let jawaad = [7,4,2,3,6]
@@ -685,18 +753,18 @@ console.log(aray);
 // console.log(jawad.slice(1,3));
 
 
-const Fruits = ['banana', 'orange', 'mango'];
-let input = document.querySelector('#shop')
-let remarks = document.querySelector('.head')
+const city = ['lahore', 'islamabad', 'karachi','dha','punjab'];
+let input = document.querySelector('#shop');
+let remarks = document.querySelector('.headj');
 
 function pushme() {
-    if (Fruits.includes(input.value)) {
+    // input.value=''
+    if (city.includes(input.value)) {
         console.log('Item Available');
         remarks.innerHTML = `${input.value} are available`;
     } else {
         console.log(`item not available`);
-        remarks.innerHTML = `${input.value} are not available`
-        document.write(remarks.innerHTML)
+        remarks.innerHTML = `${input.value} are not available`;
     }
 
 }
@@ -709,7 +777,6 @@ function pushme() {
 //forLoop
 //while loop
 //do while loop
-
 
 
 // for (let i = 0; i <= 10; i++) {
@@ -735,7 +802,7 @@ function pushme() {
 
 
 // for (let i = 0; i <= 10; i++) {
-//     console.log(`${i * 1} ka table`);
+//     console.log(`${i} ka table`);
 //     for (let j = 0; j <= 10; j++) {
 //         console.log(`${i} X ${j} = ${i*j}`);
 //     }
@@ -744,8 +811,8 @@ function pushme() {
 
 
 
-// const userInput = +prompt('enter table number')
 // const times = +prompt('How many time do you want?')
+// const userInput = +prompt('enter table number')
 
 // for (let i = 1; i <= times; i++) {
 //     console.log(`${userInput} X ${i} = ${userInput*i}`);
@@ -758,14 +825,17 @@ function pushme() {
 
 
 
-// let frut = ['apple' , 'banana' , 'orange' , 'watermelon' , 'grapes'];
+let frut = ['apple' , 'banana' , 'orange' , 'watermelon' , 'grapes'];
 
-// console.log(frut);
-// const ul = document.querySelector('ul');
-// for (let i = 0; i < frut.length; i++) {
-//     // console.log(frut[i]);
-//     ul.innerHTML += `<li>${frut[i]}</li>`
-// }
+console.log(frut);
+const ul = document.querySelector('.ull');
+
+    for (let i = 0; i < frut.length; i++) {
+        ul.innerHTML += `<li>${frut[i]}</li>`
+        // ul.innerHTML += `<li>${frut,i}</li>`
+    }
+    
+
 
 
 
