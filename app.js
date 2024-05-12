@@ -28,7 +28,7 @@ console.log(Age3 + Age1 + Age2);
 console.log(Age3 + Age4);
 // var Age1 = prompt("enter first number");
 // var Age2 = prompt("enter second number");
-// var Age3 = +prompt("enter THIRD number");//agar prompt sa paily + laga hoto or agar hum number ki jaga boolion dalda to not a number ata ha
+// var Age3 = +prompt("enter THIRD number");//agar prompt sa paily + laga hoto or agar hum number ki jaga string dalda to not a number ata ha Q ka prompt sa paihly + lagana sa value number banjati ha or by default string hoti ha value
 // var Age4 = +prompt("enter fourth number");
 console.log(Age1 + Age2);
 console.log(Age3 + Age4);
@@ -37,7 +37,7 @@ console.log(Age3);
 var num1 = 20;
 // num1=num1+10
 // line number 38 ka 1 short form bhi ha wo nicha likhi ha
-num1 += 10
+console.log(num1 *= 10);
 // num1-=10
 // num1*=10
 // num1/=10
@@ -95,11 +95,6 @@ console.log(obtain/totalmarks*100+"%")
 
 
 
-
-
-
-
-
 // if ka ander jo condition hogi wo agar true hui to if run kraga warna else run kraga
 
 // var persentage = +prompt("what is your persentage")
@@ -123,7 +118,7 @@ console.log(obtain/totalmarks*100+"%")
 
 var height = 40
 // var height = +prompt("Put the height")
-if(!(height < 20)){
+if(!(height > 20)){
     console.log("not accept")
 }
 else if( height > 30 ){
@@ -262,11 +257,11 @@ function greatusers() {
 
 // or jo {} ka ander hota ha usa katha ha scope
 
-function greetUser(username, lastname, age) {
+function greetUsere(username, lastname, age) {
     console.log('hello ' + username + lastname + age);
 }
 
-greetUser('abdullah', 'khan', 20)
+greetUsere('abdullah', 'khan', 20)
 
 
 
@@ -279,29 +274,30 @@ greetUser('abdullah', 'khan', 20)
 
 // line no 254 ka console ma usernames ki jaga undefined araha ha abdullah ka bajay Q ka yaha pa mujha function kuch return nahi kraha 
 
-// function jawadUsers(user){
-//     console.log('hello '+user);
-// }
+function jawadUserse(usernames){
+    console.log('hello '+usernames);
+    return 'hello '+usernames
+}
 
-//  var usernames = jawadUsers('abdullah');
-//  console.log("username=>" , usernames);
+ var usernames = jawadUserse('abdullah');
+ console.log("username=>!" , usernames);
 
 
 
 // return ka ander ap jo chez bhi likhta ho wo scope ka bahar wala console ma show hoti ha
-function jawadUsers(user1) {
+function jawadUsersjj(user1) {
     console.log('hello ' + user1);
-    // return 'hellow' + user1
+    return 'hellow' + user1
 }
 
-var userss = jawadUsers('abdullah');
+var userss = jawadUsersjj('abdullah');
 console.log("username=>", userss);
 
 
 // variable function ka just uper bhi bansakhta ha 
 
-var uservalue = jawadUsers('abdullah');
-function jawadUsers(user2) {
+var uservalue = jawadUsersgg('abdullah');
+function jawadUsersgg(user2) {
     console.log('hello ' + user2);
     return 'jawad' + user2
 }
@@ -312,14 +308,14 @@ console.log("username=>", uservalue);
 
 // or variable function ka just nicha  bhi bansakhta ha 
 
-function jawadUsers(user3, user4) {
+function jawadUsersww(user3, user4) {
     console.log('hello ' + user3 + user4);
     // return 'jawad' + user3
-    // return 'jawad' + user3 + user4  
+    return 'jawad ' + user3 + user4  
 }
 
-var usernames = jawadUsers('abdullah');
-console.log("username=>", usernames);
+var usernames = jawadUsersww('abdullah',' haseeb');
+console.log("!username=> ", usernames);
 
 
 
@@ -327,11 +323,11 @@ console.log("username=>", usernames);
 
 function jawadUsers(user5, user6) {
     console.log('hello ' + user5 + user6);
-    // return 'jawad' + user
+    return 'jawad ' + user5 + user6
 }
 
-var usernames = jawadUsers('abdullah', "jawwad");
-console.log("username=>", usernames);
+var usernames = jawadUsers('abdullah ', "hasnain");
+console.log("username!=> ", usernames);
 
 
 
@@ -357,10 +353,10 @@ sum(50 , 48)
 
 // global wala local ma empliment ho sakta ha lakin local wala global ma empliment nahi ho sakta
 
-var lastname = 'khan'
+var lastname = 'khan '
 
 function greatUser() {
-    var username = 'abdullah'
+    var username = 'abdullah '
     console.log(username + lastname);
 }
 
@@ -442,11 +438,11 @@ function calculateGrade() {
 
 
 
-// let todo = document.querySelector('#jawad');
-// function clickon() {
-//     console.log(todo.value);
-// todo.value =""
-// }
+let todo = document.querySelector('.jawadjj');
+function clickon(){
+    console.log(todo.value);
+todo.value =""
+}
 
 
 
@@ -470,7 +466,7 @@ function calculateGrade() {
 //     console.log(comMarks.value);
 
 //     var totalMarks = 400;
-//     var obtainedMarks = +chemMarks.value + +phyMarks.value + +mathMarks.value +          +comMarks.value;
+//     var obtainedMarks = +chemMarks.value + +phyMarks.value + +mathMarks.value + +comMarks.value;
 //     console.log('obtained marks ===>', obtainedMarks);
 //     studentTotal.innerHTML = obtainedMarks;
 
@@ -516,15 +512,6 @@ function calculatePercentage() {
     }
 
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -606,12 +593,12 @@ console.log(user[0])
 
 
 
-//push
-//pop
-//unshift
-//shift
-//splice
-//slice
+//push book ma haga
+//pop book ma haga
+//unshift ma haga
+//shift ma haga
+//splice ma haga
+//slice ma haga
 //split
 //join
 //concat
