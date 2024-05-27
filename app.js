@@ -549,7 +549,6 @@ function calculatePercentage() {
 let citiesss = ['karachi', 'lahore', 'islamabad', 'faislabad', 'hyderabad', 'sheikarpur'];
 
 
-
 console.log(citiesss[3][2]);//is tarika sa hum array ka 3 word ka 2 letter pata karsakta ha
 console.log(citiesss.length);//is tarika sa hum ray ka words ki counting maloom karsakta ha
 console.log(citiesss[3]);// isma humna just third word maloom kia ha
@@ -612,18 +611,18 @@ console.log(user[0])
 //unshift {start ma value add krna ka liya}
 //shift {start ma value hata na ka liya}
 //splice{('shurw kaha sa krna ha' , 'kitna delete krna hain' , 'uski jaga kiya rkhna haa') third wala optioonal ha}
-//split {paragraph ko array ma krana ka liya,or paragraph ma convert corna ka lia bhi }
-//join {Array ko paragraph ma krna ka liya yani join krna ka lia}
+//split {string ko array ma krana ka liya,or string ma convert corna ka lia bhi }
+//join {Array ko string ma krna ka liya yani join krna ka lia}
 //includes{just bollien ma ya batana ka lia ka wo value array ma ha ya nahi}
 //indexof{bs index number batana ka lia ka konsa word ka kia number ha}
-//slice{start sa uradata ha bracket ma jitna digits dalo}
+//slice{start sa uradata ha bracket ma jo digits dalo or  , ka bad jo digit dalo us ka bad sa nahi urata}
 //reverse{array ko ulta krdata ha}
 //sort{sequence ma lana ka lia ha}
 
 
-let vegetable = 'bottle guard'
+let vegetable = ['bottle guard']
 
-let fruit = `apple`;
+let fruit = [`apple`];
 
 let fruits = ['kala', 'ahmed', 'gora', 'jawad', 'akhroot', fruit, vegetable]
 
@@ -652,7 +651,7 @@ array.shift()//ya start ma word ko mitadata  ha
 
 let dryFruits = ['kala',1, 'ahmed', 'gora', 'jawad', 'akhroot', fruit, vegetable, 'watermelon', 'melon', 'mangoes', 'guava', 'nashpati', 'grapes', 'anaaar', 'kinno']
 
-// console.log(dryFruits);
+console.log(dryFruits.indexOf('ahmed'));
 // document.write(dryFruits.indexOf)
 
 
@@ -679,17 +678,10 @@ console.log(value);
 
 // console.log(dryFruits);
 
+let ahmed = ['haseeb','hasnain','jawad','ebad','ali','ajaz']
 
-
-const newArray = dryFruits.slice(3)//start sa uradata ha bracket ma jitna digits dalo
+const newArray = ahmed.slice(2,4)//start sa uradata ha bracket ma jitna digits dalo
 console.log(newArray);
-
-
-
-
-
-
-
 
 
 // const namess = 'Muhammad Abdullah khan';
@@ -698,23 +690,10 @@ console.log(newArray);
 // console.log(arr);
 
 
-
-
-
-
-
-
-
-
-
-
 const names = ['Muhammad', 'Abdullah', 'Khan'];
-// const star = names.join(' ')
-const star = names.join(' j   ')
+const star = names.join(' ')
+// const star = names.join(' j   ')
 console.log(star);
-
-
-
 
 
 let fruitss = ['apple', 'orange',`strawberry`, 'banana'];
@@ -730,14 +709,12 @@ let aray = [6, 3, 5, 1, 2]
 //     // return b-a
 //     return a - b
 // })
-
-
 console.log(aray);
 
-// let jawaad = [7,4,2,3,6]
-// jawaad.slice();
-// console.log(jawaad);
-// console.log(jawad.slice(1,3));
+
+let jawaad = [1,2,3,4,5,6,7,8,9]
+console.log(jawaad.slice(3,5));
+console.log(jawaad.slice(3));
 
 
 const city = ['lahore', 'islamabad', 'karachi','dha','punjab'];
@@ -797,17 +774,12 @@ function pushme() {
 
 
 
+// let times = +prompt('how many times do you want')
+// let table = +prompt('which table')
 
-// const times = +prompt('How many time do you want?')
-// const userInput = +prompt('enter table number')
-
-// for (let i = 1; i <= times; i++) {
-//     console.log(`${userInput} X ${i} = ${userInput*i}`);
+// for (let i = 1; i <= times ; i++) {
+// console.log(`${table}x${i}=${table*i}`);    
 // }
-
-
-
-
 
 
 
@@ -829,16 +801,17 @@ const ul = document.querySelector('.ull');
 
 
 
-let frutss = ['apple' , 'banana' , 'orange'];
+let frutss = ['apple' ,'orange' ,'banana'];
+console.log(frutss);
 let ull = document.querySelector('#ul')
 function ol() {
     ull.innerHTML =``
   for (let i = 0; i < frutss.length; i++) {
-    console.log(frutss[i],i); 
+    console.log(frutss[i]); 
     ull.innerHTML += `<li>${fruitss[i]}</li>`
    } 
 }
-
+ol()
 
 
 // let fruts = ['apple' , 'banana' , 'orange' , 'watermelon' , 'grapes'];
