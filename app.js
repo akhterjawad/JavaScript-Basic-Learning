@@ -668,8 +668,8 @@ console.log(value);
 // dryFruits.splice(2, 1, 'stawberry')
 // console.log(dryFruits);
 
-// dryFruits.splice(1 , 3);
-// console.log(dryFruits);
+dryFruits.splice(2 , 3);
+console.log(dryFruits);
 
 
 // dryFruits.splice(6 , 2 , 'banana');
