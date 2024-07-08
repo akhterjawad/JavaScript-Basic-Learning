@@ -365,14 +365,15 @@ sum(50 , 48)
 var lastname = 'khan '
 
 function greatUser() {
-    var username = 'abdullah '
-    console.log(username + lastname);
+    var usermain = 'abdullah '
+    // return usermain= 'd'
+    console.log(usermain + lastname);
 }
 
-// console.log(username)
-console.log(lastname)
+console.log(usermain)
+// console.log(lastname)
 
-greatUser()
+// greatUser()
 
 
 
