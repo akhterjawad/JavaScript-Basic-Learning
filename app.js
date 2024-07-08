@@ -11,7 +11,7 @@
 // 4 object 
 var userName = "jawad"
 var age = (19)
-var education = ("X!!")
+var education = "X!!"
 var address = "Malir kalaboard"
 console.log(userName);
 console.log(age);
@@ -34,10 +34,12 @@ console.log(Age1 + Age2);
 console.log(Age3 + Age4);
 console.log(Age3);
 
+//-----ASSINMENT OPERATER-----//
+
 var num1 = 20;
-// num1=num1+10
+// console.log(num1=num1+10);
 // line number 38 ka 1 short form bhi ha wo nicha likhi ha
-console.log(num1 *= 10);
+console.log(num1 += 10);
 // num1-=10
 // num1*=10
 // num1/=10
@@ -48,8 +50,10 @@ console.log(10 <= 10);
 console.log(10 <= "10");
 console.log(9 <= "10");
 // xclination mark (!) ka madlab ha not
+// xclination mark(!) single = ki value rakhta ha
 console.log(10 != 10);
 console.log(10 == "10");
+// tripple equal to data type bhi check krta ha (===) 
 console.log(10 === "10");
 console.log(10 !== "10");//kia number 10 barabar nahi ha string ka number 10 ka '10'
 console.log(10 != "10");
@@ -58,7 +62,7 @@ console.log(2 != 2.0);
 console.log(0.3 === 0.1+0.2);
 console.log(0.3 !== 0.1+0.2);
 console.log(10 !== 10);
-// double equal to data type bhi check krta ha (==) LockManager(!) ka sath
+// double equal to data type bhi check krta ha (==) xclination mark(!) ka sath
 // && = and
 // || = OR
 var comparisions = 10 <= 10 || 10 < 6;
@@ -95,7 +99,9 @@ console.log(obtain/totalmarks*100+"%")
 
 
 
-// if ka ander jo condition hogi wo agar true hui to if run kraga warna else run kraga
+// jub hum simple if lagainga to if ka ander jo condition hogi wo agar true hui to if run kraga warna kuch bhi nahi hoga
+
+// agar hum if & else dono lagainga to  if ka ander jo condition hogi wo agar true hui to if run kraga warna else run kraga
 
 // var persentage = +prompt("what is your persentage")
 // if (persentage >= 50){
@@ -163,11 +169,15 @@ else{
 // else{
 //     console.log("code ghalat ha")
 // }
+// in sub ki tarha 1 nested if else bhi hota ha jis ma hum if ka ander 1 or 1 or condition lagata ha 
 
-// double plus ++ , double minus -- sirf 1 ka lia ha baki or numbers ka lia simple add or subract kranga
+
 
 // ++num pre increment
 // num++ post increment
+
+// double plus ++ , double minus -- sirf 1 ka lia ha baki or numbers ka lia simple add or subract kranga
+
 var num = 10;
 
 // console.log(num + 1);
@@ -187,10 +197,10 @@ var calculate = ++num + num++ + ++num + --num + num-- + num++ + ++num;
 
 console.log(calculate,11+11+13+12+12+11+13);
 
-// // var division = +prompt("write here even number")
-// // console.log(division%2)
+// var division = +prompt("write here even number")
+// console.log(division%2)
 
-// var num = +prompt("number dal");
+// // var num = +prompt("number dal");
 // if(num % 2 === 0){
 //     console.log("even number dala ha aap na")
 // }
@@ -206,7 +216,6 @@ console.log(calculate,11+11+13+12+12+11+13);
 
 
 
-// console.log(greatUsers.innerHTML);
 
 // function greetUser (){   
 // console.log('hello world');
