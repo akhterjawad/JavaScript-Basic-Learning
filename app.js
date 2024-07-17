@@ -370,7 +370,7 @@ function greatUser() {
     console.log(usermain + lastname);
 }
 
-console.log(usermain)
+// console.log(usermain)
 // console.log(lastname)
 
 // greatUser()
@@ -558,7 +558,6 @@ function calculatePercentage() {
 
 let citiesss = ['karachi', 'lahore', 'islamabad', 'faislabad', 'hyderabad', 'sheikarpur'];
 
-
 console.log(citiesss[3][2]);//is tarika sa hum array ka 3 word ka 2 letter pata karsakta ha
 console.log(citiesss.length);//is tarika sa hum ray ka words ki counting maloom karsakta ha
 console.log(citiesss[3]);// isma humna just third word maloom kia ha
@@ -575,7 +574,7 @@ console.log(typeof (cities))
 
 
 let user = ['akhter', 'jawad', 'ahmed-shapater', 'haseeb', ['islamabad', 'karachi']]
-console.log(`${user[0]} ${user[2]}`);// is tarika sa hum 1 single console ma 2 wards dal sakta ha array ka
+console.log(`${user[0]} ${user[2]}`);// is tarika sa hum 1 single console ma 2 words dal sakta ha array ka
 
 // console.log(user[0][2]);
 console.log(user[3][0]);
@@ -625,7 +624,7 @@ console.log(user[0])
 //join {Array ko string ma krna ka liya yani join krna ka lia}
 //includes{just bollien ma ya batana ka lia ka wo value array ma ha ya nahi}
 //indexof{bs index number batana ka lia ka konsa word ka kia number ha}
-//slice{start sa uradata ha bracket ma jo digits dalo or  , ka bad jo digit dalo us ka bad sa nahi urata}
+//slice{ is ma 2 parameter receive hota ha isma ya hota ha ka first digit jo hota ha us sa paihla ki value delete hoti ha or second parameter ko milaka uska bad ki value delete hoti ha}
 //reverse{array ko ulta krdata ha}
 //sort{sequence ma lana ka lia ha}
 
@@ -688,9 +687,9 @@ console.log(dryFruits);
 
 // console.log(dryFruits);
 
-let ahmed = ['haseeb','hasnain','jawad','ebad','ali','ajaz']
+let ahmed = ['haseeb','hasnain','jawad','ebad','ali','ajaz', 'watermelon', 'melon', 'mangoes', 'guava', 'nashpati', 'grapes', 'anaaar', 'kinno']
 
-const newArray = ahmed.slice(2,4)//start sa uradata ha bracket ma jitna digits dalo
+const newArray = ahmed.slice(2,5)// is ma 2 parameter receive hota ha isma ya hota ha ka first digit jo hota ha us sa paihla ki value delete hoti ha or second parameter ko milaka uska bad ki value delete hoti ha
 console.log(newArray);
 
 
@@ -794,15 +793,15 @@ function pushme() {
 
 
 
-let frut = ['apple' , 'banana' , 'orange' , 'watermelon' , 'grapes'];
+// let frut = ['apple' , 'banana' , 'orange' , 'watermelon' , 'grapes'];
 
-console.log(frut);
-const ul = document.querySelector('.ull');
+// console.log(frut);
+// const ul = document.querySelector('.ull');
 
-    for (let i = 0; i < frut.length; i++) {
-        ul.innerHTML += `<li>${frut[i]}</li>`
-        // ul.innerHTML += `<li>${frut,i}</li>`
-    }
+//     for (let i = 0; i < frut.length; i++) {
+//         ul.innerHTML += `<li>${frut[i]}</li>`
+//         // ul.innerHTML += `<li>${frut,i}</li>`
+//     }
     
 
 
@@ -811,17 +810,17 @@ const ul = document.querySelector('.ull');
 
 
 
-let frutss = ['apple' ,'orange' ,'banana'];
+let frutss = ['ali','ajaz', 'watermelon', 'melon', 'mangoes', 'guava', 'nashpati', 'grapes', 'anaaar', 'kinno'];
 console.log(frutss);
-let ull = document.querySelector('#ul')
+let ull = document.querySelector('#ulMain')
 function ol() {
     ull.innerHTML =``
   for (let i = 0; i < frutss.length; i++) {
     console.log(frutss[i]); 
-    ull.innerHTML += `<li>${fruitss[i]}</li>`
+    ull.innerHTML += `<li>${frutss[i]}</li>`
    } 
 }
-ol()
+// ol()
 
 
 // let fruts = ['apple' , 'banana' , 'orange' , 'watermelon' , 'grapes'];
@@ -835,7 +834,9 @@ ol()
 // }
 
 
-
+// while (condition) {
+    
+// }
 
 
 // let fruts = ['apple', 'banana', 'orange', 'watermelon', 'grapes'];
@@ -852,22 +853,21 @@ ol()
 // }
 
 
+// do {
+    
+// } while (condition);
 
 
 
-
-// let fruts = ['apple', 'banana', 'orange', 'watermelon', 'grapes'];
-// let ul = document.querySelector('#ul')
-// function ol() {
-//     ul.innerHTML = ''
-//     let i = 0;
-//     do {console.log(fruts[i], i);
-//         ul.innerHTML += `<li>${fruts[i]}</li>`
-//         i++}
-//     while(i < fruts.length) 
-     
-
-        
-//     }
+let fruts = ['apple', 'banana', 'orange', 'watermelon', 'grapes'];
+let ul = document.querySelector('#ul')
+function ol() {
+    ul.innerHTML = ''
+    let i = 0;
+    do {console.log(fruts[i], i);
+        ul.innerHTML += `<li>${fruts[i]}</li>`
+        i++}
+    while(i < fruts.length)         
+    }
 
 
