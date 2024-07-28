@@ -10,8 +10,10 @@
 // 3Boolean true ya false
 // 4 object 
 var userName = "jawad"
-var age = (19)
+var age = 19
 var education = "X!!"
+var value = true
+var value2 = true
 var address = "Malir kalaboard"
 console.log(userName);
 console.log(age);
